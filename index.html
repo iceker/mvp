@@ -1,30 +1,1116 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
-    <div>
-        <div class="heroimage slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 1309px;margin-top:50px;">
-		<a href="http://www.google.com">
-		<img src="https://mvpdev.blob.core.windows.net/content/overview/images/header1.png"  alt="Brian Harry, Microsoft Corporate Vice President" style="top:20px; position: absolute;z-index:-5;">
-		</a>
-        </div>
-        <div class="herecontentwrap" style="position: relative;">
-            <p class="normal" style="background-color: rgba(22, 34, 56, 1);">
-                “We could not be successful without such an incredibly valuable and engaged group of people working with us.”
-                <span class="name">Brian Harry, Microsoft Corporate Vice President, Developer Division—speaking about the MVP community</span>
-            </p>
-        </div>
-        <div>
-            <p style="background-color: rgba(22, 34, 56, 1);color:red;">
-                “We could not be successful without such an incredibly valuable and engaged group of people working with us.”
-                <span class="name">Brian Harry, Microsoft Corporate Vice President, Developer Division—speaking about the MVP community</span>
-            </p>
-        </div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Microsoft Technical Case Studies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+        <div class="wrapper">
+
+            <div class="site-title">
+                <a class="" href="/techcasestudies/" title="">
+                    Microsoft Technical Case Studies
+                </a>
+                <a class="search-filter-button" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
+
+            <!-- In the freezer until we have pages
+            <nav class="site-nav">
+                <a href="#" class="menu-icon">
+                    <svg viewBox="0 0 18 15">
+                        <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+                        <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+                        <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+                    </svg>
+                </a>
+
+                <div class="trigger">
+
+                    <a class="page-link" href="/techcasestudies/2016-11-21-iceberg.html">Partnering with ICEBERG to migrate an ice hockey analytics system to the cloud</a>
+                </div>
+            </nav> -->
+        </div>
+    </header>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="home">
+                <input id="nav-trigger" class="nav-trigger" type="checkbox">
+                <div class="sf-container search-filters">
+                    <div class="search-filters-inner">
+                        <div style="text-align: right;">
+                            <a class="search-filter-button glyphicon glyphicon-remove" href="javascript:void(0)"></a>
+                        </div>
+                        <h1 class="inline-heading">Find and Filter</h1>&nbsp;<a href="javascript:void(0)" id="ResetSearch">Clear all filters</a>
+                        <div class="pad-bottom">
+                            Use the filter and keyword search below to find stories that matter to you.
+                        </div>
+
+                        <form id="AdvancedSearch" class="form-horizontal">
+                            <div class="pad-bottom">
+                                <h2>Refine results by:</h2>
+                                <div class="treeview">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="chktechnology">
+                                            <label>
+                                                <input class="search-value" name="Filters" value="technology" type="checkbox">
+                                                <span class="treeview-checkbox"></span>
+                                            </label>
+                                            <label class="tree-root" for="chktechnology">
+                                                Technology <label class="items-selected"></label>
+                                            </label>
+                                            <ul>
+
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="DevOps">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        DevOps
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="IoT">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        IoT
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Azure App Service">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Azure App Service
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Power BI Embedded">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Power BI Embedded
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Mobile Application Development with Xamarin">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Mobile Application Development with Xamarin
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Azure Functions">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Azure Functions
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Mobile DevOps">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Mobile DevOps
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-technology-">
+                                                    <label>
+                                                        <input class="search-value" name="technology" type="checkbox" value="Outlook Group Connectors">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Outlook Group Connectors
+                                                    </label>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+
+                                        <li>
+                                            <input type="checkbox" id="chkverticals">
+                                            <label>
+                                                <input class="search-value" name="Filters" value="verticals" type="checkbox">
+                                                <span class="treeview-checkbox"></span>
+                                            </label>
+                                            <label class="tree-root" for="chkverticals">
+                                                Verticals <label class="items-selected"></label>
+                                            </label>
+                                            <ul>
+
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Communications/Media">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Communications/Media
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Agricultural">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Agricultural
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Marketing">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Marketing
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Retail, Consumer Products &amp; Services">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Retail, Consumer Products &amp; Services
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Manufacturing">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Manufacturing
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Professional Services">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Professional Services
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Technology">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Technology
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Healthcare">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Healthcare
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Energy">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Energy
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Public Sector">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Public Sector
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Financial Services">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Financial Services
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Infrastructure">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Infrastructure
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Smart Cities">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Smart Cities
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Public Safety">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Public Safety
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Service">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Service
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Transportation &amp; Logistics">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Transportation &amp; Logistics
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Real Estate">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Real Estate
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Social">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Social
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Telecommunications">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Telecommunications
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Tourism">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Tourism
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Sports">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Sports
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Startup">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Startup
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Mixed Reality">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Mixed Reality
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Consumer Robotics">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Consumer Robotics
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Facility Management">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Facility Management
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Smart Building">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Smart Building
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Motorsports">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Motorsports
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Environmental">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Environmental
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Other">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Other
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Cultural Heritage">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Cultural Heritage
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Entertainment">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Entertainment
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Media">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Media
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Life Sciences">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Life Sciences
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Health and Fitness">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Health and Fitness
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Games">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Games
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Education">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Education
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Social Media">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Social Media
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Outdoors">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Outdoors
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Sound">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Sound
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Business to Business">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Business to Business
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-verticals-">
+                                                    <label>
+                                                        <input class="search-value" name="verticals" type="checkbox" value="Enterprise Social">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Enterprise Social
+                                                    </label>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+
+                                        <li>
+                                            <input type="checkbox" id="chklanguage">
+                                            <label>
+                                                <input class="search-value" name="Filters" value="language" type="checkbox">
+                                                <span class="treeview-checkbox"></span>
+                                            </label>
+                                            <label class="tree-root" for="chklanguage">
+                                                Language <label class="items-selected"></label>
+                                            </label>
+                                            <ul>
+
+
+                                                <li>
+                                                    <input type="checkbox" id="item-language-">
+                                                    <label>
+                                                        <input class="search-value" name="language" type="checkbox" value="English">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        English
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-language-">
+                                                    <label>
+                                                        <input class="search-value" name="language" type="checkbox" value="French">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        French
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-language-">
+                                                    <label>
+                                                        <input class="search-value" name="language" type="checkbox" value="Portuguese">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Portuguese
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-language-">
+                                                    <label>
+                                                        <input class="search-value" name="language" type="checkbox" value="Korean">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Korean
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="item-language-">
+                                                    <label>
+                                                        <input class="search-value" name="language" type="checkbox" value="Spanish">
+                                                        <span class="treeview-checkbox"></span>
+                                                    </label>
+                                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                                        Spanish
+                                                    </label>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <div>
+                                        <div class="input-group pad-bottom">
+                                            <input aria-label="..." class="form-control" id="SearchPhraseText" name="SearchPhraseText" placeholder="Enter keyword here (optional)" value="" type="text">
+                                            <div class="input-group-btn dropup hide">
+                                                <a id="SearchPhraseScopeButton" class="btn btn-default btn-search-scope dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span id="SearchPhraseScopeString">Application</span> <span class="caret"></span>
+                                                </a>
+                                                <ul id="SearchPhraseScopeSelection" class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a data-searchphrasescope="1" href="#">Technical Solution Stories</a>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- /btn-group -->
+                                        </div><!-- /input-group -->
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-search search-refine hide" onclick="return customSearch.applyFilters(true)">Search or Refine</button>
+                            <button type="button" class="btn btn-primary btn-search search-all" onclick="return customSearch.removeFilters(true)">Browse All Stories</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="search-filters-fade-in"></div>
+
+
+                <ul id="container" class="post-list js-packery" data-packery-options="{ &quot;itemSelector&quot;: &quot;.item&quot; }" style="position: relative; height: 7674px;">
+
+                    <li class="carditem item" id="devops-2017-02-20-catraca-livre" style="position: absolute; left: 0px; top: 0px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="http://www.google.com">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 20, 2017</span>
+                                        Implementing A/B testing for Catraca Livre using OSS technologies on Azure
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft and Rivendel joined efforts to provide Brazilian news website Catraca Livre with the means to perform A/B tests for ad placement optimization using OSS technologies on Azure.<p><a href="/techcasestudies/devops/2017/02/20/catraca-livre.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-2017-02-17-newhopeliuhe" style="position: absolute; left: 522px; top: 0px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="http://www.google.com">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 17, 2017</span>
+                                        Developing the next generation of smart monitoring solutions for chicken farming
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                New Hope Liuhe, a leading Chinese agricultural company, reached out to Ye Fan Technology and Microsoft for an IoT solution that could provide automatic, real-time remote monitoring and environmental control of chicken farming facilities.<p><a href="/techcasestudies/iot/2017/02/17/NewHopeLiuhe.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="azure-20app-20service-2017-02-17-senparc" style="position: absolute; left: 1044px; top: 0px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/azure%20app%20service/2017/02/17/Senparc.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 17, 2017</span>
+                                        Developing a WeChat digital-marketing management system with Senparc
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft collaborated with Senparc, a development partner of WeChat (the most popular digital-marketing channel in China), to develop a digital-marketing management system based on the WeChat app.<p><a href="/techcasestudies/azure%20app%20service/2017/02/17/Senparc.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="devops-2017-02-15-adamsoftware" style="position: absolute; left: 0px; top: 282px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/devops/2017/02/15/ADAMSoftware.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 15, 2017</span>
+                                        Using DevOps practices with ADAM Software to accelerate developer ramp-up
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                ADAM Software and Microsoft worked together to optimize ADAM Software's build and release pipeline. This report details the DevOps practices that were implemented for a complex Smart Content Hub marketing solution.<p><a href="/techcasestudies/devops/2017/02/15/ADAMSoftware.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-2017-02-15-zpmc" style="position: absolute; left: 522px; top: 306px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/2017/02/15/ZPMC.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 15, 2017</span>
+                                        Azure IoT launches evolution of ZPMC port-machinery business
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft and ZPMC teamed up to bring the ZPMC port-machinery business to the next level with Azure IoT services.<p><a href="/techcasestudies/iot/2017/02/15/ZPMC.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="azure-20app-20service-2017-02-15-edp" style="position: absolute; left: 1044px; top: 306px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/azure%20app%20service/2017/02/15/EDP.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 15, 2017</span>
+                                        How Azure empowers EDP Software to keep its customers on time
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Together with Microsoft, EDP Software moved its workforce-scheduling system to a PaaS solution, allowing it to concentrate on the project as opposed to the infrastructure.<p><a href="/techcasestudies/azure%20app%20service/2017/02/15/EDP.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="devops-2017-02-13-alterbooth" style="position: absolute; left: 522px; top: 564px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/devops/2017/02/13/alterbooth.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 13, 2017</span>
+                                        DevOps practices help startup Alterbooth focus on the essentials for an upcoming launch
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft and Alterbooth conducted a joint hackfest to introduce DevOps practices into Alterbooth's new sauce-ordering and customizing service.<p><a href="/techcasestudies/devops/2017/02/13/alterbooth.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-power-20bi-20embedded-2017-02-13-bttcorp" style="position: absolute; left: 0px; top: 588px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/power%20bi%20embedded/2017/02/13/BTTCorp.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 13, 2017</span>
+                                        Power BI Embedded, IoT, and Machine Learning for brain thermal pattern recognition with BTT
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft worked with BTT Corp to develop a solution to help with brain thermal tunnel pattern recognition.<p><a href="/techcasestudies/iot/power%20bi%20embedded/2017/02/13/BTTCorp.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-2017-02-11-jcble" style="position: absolute; left: 1044px; top: 588px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/2017/02/11/JCBLE.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 11, 2017</span>
+                                        Building an IoT solution for Chongqing Gas Group Corporation with JCBLE
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                JCBLE, in cooperation with Microsoft, developed an IoT solution that reduces operating and maintenance costs for civilian natural-gas usage.<p><a href="/techcasestudies/iot/2017/02/11/JCBLE.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="mobile-20application-20development-20with-20xamarin-2017-02-09-opportunityspace" style="position: absolute; left: 522px; top: 846px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/mobile%20application%20development%20with%20xamarin/2017/02/09/opportunityspace.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 9, 2017</span>
+                                        How OpportunitySpace is boosting the effort to restore neighborhoods with a Xamarin.Forms mobile app
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                This article details the implementation of a cross-platform mobile application built in Xamarin that takes vector map data from an API and renders it using Xamarin.Forms.<p><a href="/techcasestudies/mobile%20application%20development%20with%20xamarin/2017/02/09/opportunityspace.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-azure-20app-20service-azure-20functions-2017-02-09-tofugeariotazfn" style="position: absolute; left: 1044px; top: 870px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/azure%20app%20service/azure%20functions/2017/02/09/TofugearIotAzFn.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 9, 2017</span>
+                                        Improving scalability and customer analytics for the Tofugear retail platform
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Tofugear, an IoT startup, worked with Microsoft to re-architect its Omnitech retail platform solution, gaining both scalability and a dashboard for improved customer analytics.<p><a href="/techcasestudies/iot/azure%20app%20service/azure%20functions/2017/02/09/TofugearIotAzFn.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="azure-20app-20service-azure-20functions-2017-02-06-arabsea" style="position: absolute; left: 0px; top: 882px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/azure%20app%20service/azure%20functions/2017/02/06/ArabSea.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 6, 2017</span>
+                                        Enhancing the ArabSea SMACC system by using Azure Functions
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                ArabSea, an SMB financial-solutions provider, migrated Windows services from IaaS to PaaS using Azure Functions. The result: enhanced efficiency of both development and operation.<p><a href="/techcasestudies/azure%20app%20service/azure%20functions/2017/02/06/ArabSea.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-2017-02-04-futurestandard" style="position: absolute; left: 1044px; top: 1152px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/2017/02/04/futurestandard.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 4, 2017</span>
+                                        Future Standard changing image analytics with serverless platform
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Future Standard offers a one-stop IoT solution for collecting, analyzing, viewing, and acting on data with ease. To offer customers an Azure-based solution, Future Standard and Microsoft created a prototype during a two-day hackfest.<p><a href="/techcasestudies/iot/2017/02/04/futurestandard.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="iot-2017-02-04-gti-smart-city" style="position: absolute; left: 0px; top: 1164px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/iot/2017/02/04/GTI-Smart-City.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Feb 4, 2017</span>
+                                        Building a 'big data' platform for a Smart City solution
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft teamed up with GTI, a leading IoT platform and service provider headquartered in Beijing, to develop the "big data" platform used in its Smart City solution, which enables data-driven city operation.<p><a href="/techcasestudies/iot/2017/02/04/GTI-Smart-City.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="devops-azure-20app-20service-mobile-20application-20development-20with-20xamarin-2017-01-31-missingchildrensocietyofcanada" style="position: absolute; left: 522px; top: 1164px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/devops/azure%20app%20service/mobile%20application%20development%20with%20xamarin/2017/01/31/MissingChildrenSocietyofCanada.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Jan 31, 2017</span>
+                                        Finding missing kids by harnessing Azure Functions
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Alongside members of the City of Calgary and Calgary Police, Missing Children Society of Canada partnered with Microsoft in an innovation workshop to understand how Azure Functions, Xamarin, and DevOps best practices can better address their need to quickly provide police with information about children who are reported missing.<p><a href="/techcasestudies/devops/azure%20app%20service/mobile%20application%20development%20with%20xamarin/2017/01/31/MissingChildrenSocietyofCanada.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="mobile-20application-20development-20with-20xamarin-2017-01-27-chefsforseniors" style="position: absolute; left: 1044px; top: 1458px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/mobile%20application%20development%20with%20xamarin/2017/01/27/ChefsForSeniors.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Jan 27, 2017</span>
+                                        Using Xamarin, HockeyApp, and Azure App Service to power operations behind Chefs For Seniors
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Microsoft and Chefs For Seniors teamed up to build a Xamarin app and website that would facilitate chef operations. The Xamarin app shows chefs the menus they need to prepare for their clients and provides them grocery lists with the ability to mark items as purchased.<p><a href="/techcasestudies/mobile%20application%20development%20with%20xamarin/2017/01/27/ChefsForSeniors.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carditem item" id="devops-iot-2017-01-26-transnet" style="position: absolute; left: 0px; top: 1470px;">
+                        <div class="card">
+                            <div class="card-image blue">
+                                <a href="/techcasestudies/devops/iot/2017/01/26/transnet.html">
+
+                                    <span style="color:white;background-color:gray;" class="card-title inline">
+                                        <span class="card-date">Jan 26, 2017</span>
+                                        Transnet improves logistics through DevOps and an IoT remote monitoring solution
+                                    </span>
+
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                Transnet delivers thousands of tons of goods across South Africa. It aims to innovate fast and provide quality solutions. The introduction of DevOps will help reduce costs of delivering products, and creating new, scalable IoT solutions will help Transnet leverage the company assets more effectively.<p><a href="/techcasestudies/devops/iot/2017/01/26/transnet.html">Read the full article</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+                <div class="row" id="no-results" style="display:none">
+                    <div class="col s12">No matches were found for your search criteria. Please adjust your criteria and try again.</div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <!--?xml version="1.0" encoding="UTF-8"?-->
+    <footer class="site-footer">
+        <div class="wrapper">
+
+            <div class="footer-col-wrapper ">
+                <div class="footer-col">
+                    <span id="FooterLinks">
+                        <span id="Footer_title">Microsoft Technical Case Studies</span>
+                        <span id="Footer_github">
+                            <a href="https://github.com/microsoft">Microsoft on GitHub</a>
+                        </span>
+                        <span id="Footer_privacyStatement">
+                            <a href="http://go.microsoft.com/fwlink/?LinkId=248681">Privacy &amp; Cookies</a>
+                        </span>
+                        <span id="Footer_termsOfUse">
+                            <a href="http://go.microsoft.com/fwlink/?LinkID=206977">Terms of Use</a>
+                        </span>
+                        <span id="Footer_trademarks">
+                            <a href="http://go.microsoft.com/?linkid=9851308">Trademarks</a>
+                        </span>
+                    </span>
+                    <div id="FooterFarStack">
+                        <div class="FooterMsLogoSvg">
+                            <a href="http://go.microsoft.com/fwlink/p/?linkid=182163" id="FooterFarStack_MsComLogoSvg_href">
+                                <svg enable-background="new 0 0 93 20" height="20px" version="1.1" viewBox="0 0 93 20" width="93px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                <g id="Type">
+                                <g>
+                                <path d="M 14.834 19 V 8.747 c 0 -0.779 0.045 -1.932 0.135 -3.459 h -0.045 c -0.15 0.809 -0.303 1.408 -0.46 1.797 L 9.59 19 H 7.849 L 2.941 7.197 C 2.814 6.8 2.661 6.164 2.481 5.288 H 2.414 C 2.436 5.49 2.46 6.018 2.486 6.871 c 0.026 0.854 0.04 1.591 0.04 2.212 V 19 H 0.044 V 2.896 h 3.818 L 7.961 13.07 c 0.389 0.98 0.632 1.723 0.73 2.224 h 0.067 l 0.854 -2.246 l 4.211 -10.152 h 3.661 V 19 H 14.834 Z" fill="#ffffff"></path>
+                                <path d="M 23.281 3.435 c 0 0.427 -0.155 0.782 -0.466 1.067 c -0.311 0.285 -0.687 0.427 -1.128 0.427 c -0.442 0 -0.816 -0.142 -1.123 -0.427 c -0.307 -0.285 -0.46 -0.64 -0.46 -1.067 c 0 -0.434 0.155 -0.797 0.466 -1.089 c 0.311 -0.292 0.683 -0.438 1.118 -0.438 c 0.457 0 0.836 0.15 1.14 0.449 S 23.281 3.015 23.281 3.435 Z M 20.361 19 V 7.5 h 2.594 V 19 H 20.361 Z" fill="#ffffff"></path>
+                                <path d="M 33.91 18.518 c -0.883 0.509 -1.973 0.764 -3.268 0.764 c -1.107 0 -2.094 -0.24 -2.959 -0.719 c -0.865 -0.479 -1.539 -1.161 -2.021 -2.045 c -0.483 -0.883 -0.724 -1.871 -0.724 -2.965 c 0 -1.25 0.249 -2.354 0.747 -3.313 c 0.498 -0.958 1.221 -1.701 2.167 -2.229 c 0.947 -0.527 2.046 -0.792 3.296 -0.792 c 0.486 0 0.992 0.054 1.516 0.163 c 0.523 0.109 0.939 0.249 1.246 0.421 v 2.459 c -0.846 -0.614 -1.729 -0.921 -2.65 -0.921 c -1.078 0 -1.951 0.361 -2.622 1.084 c -0.67 0.723 -1.005 1.686 -1.005 2.892 c 0 1.198 0.322 2.138 0.966 2.819 c 0.644 0.681 1.516 1.021 2.616 1.021 c 0.398 0 0.844 -0.086 1.338 -0.258 c 0.494 -0.173 0.947 -0.408 1.357 -0.708 V 18.518 Z" fill="#ffffff"></path>
+                                <path d="M 42.771 10.027 c -0.135 -0.097 -0.355 -0.187 -0.663 -0.27 c -0.307 -0.083 -0.588 -0.124 -0.842 -0.124 c -0.757 0 -1.366 0.322 -1.831 0.966 c -0.464 0.645 -0.696 1.482 -0.696 2.516 V 19 h -2.594 V 7.5 h 2.594 v 2.235 h 0.045 c 0.255 -0.771 0.641 -1.37 1.157 -1.797 s 1.111 -0.64 1.785 -0.64 c 0.449 0 0.798 0.052 1.045 0.157 V 10.027 Z" fill="#ffffff"></path>
+                                <path d="M 55.17 13.138 c 0 1.864 -0.539 3.354 -1.617 4.47 s -2.542 1.674 -4.391 1.674 c -1.774 0 -3.188 -0.53 -4.239 -1.59 s -1.578 -2.495 -1.578 -4.307 c 0 -1.909 0.539 -3.414 1.617 -4.515 s 2.571 -1.651 4.48 -1.651 c 1.797 0 3.201 0.526 4.212 1.578 C 54.665 9.849 55.17 11.296 55.17 13.138 Z M 52.475 13.228 c 0 -1.272 -0.282 -2.239 -0.848 -2.897 s -1.342 -0.988 -2.33 -0.988 c -1.019 0 -1.815 0.344 -2.393 1.033 c -0.576 0.689 -0.864 1.662 -0.864 2.92 c 0 1.221 0.288 2.169 0.864 2.847 c 0.577 0.678 1.382 1.017 2.415 1.017 c 1.04 0 1.826 -0.333 2.358 -1 C 52.209 15.492 52.475 14.516 52.475 13.228 Z" fill="#ffffff"></path>
+                                <path d="M 64.486 15.709 c 0 1.071 -0.412 1.934 -1.235 2.589 c -0.824 0.655 -1.939 0.983 -3.347 0.983 c -0.457 0 -0.976 -0.061 -1.556 -0.18 c -0.58 -0.12 -1.064 -0.27 -1.454 -0.449 V 16.17 c 0.479 0.345 1.003 0.61 1.572 0.797 c 0.569 0.188 1.082 0.281 1.538 0.281 c 1.243 0 1.864 -0.412 1.864 -1.235 c 0 -0.292 -0.062 -0.526 -0.185 -0.702 c -0.124 -0.176 -0.337 -0.352 -0.641 -0.527 c -0.303 -0.176 -0.772 -0.395 -1.409 -0.657 c -0.749 -0.321 -1.305 -0.633 -1.668 -0.933 c -0.363 -0.299 -0.633 -0.65 -0.809 -1.055 s -0.264 -0.877 -0.264 -1.416 c 0 -1.033 0.408 -1.875 1.224 -2.527 c 0.816 -0.651 1.872 -0.977 3.167 -0.977 c 0.397 0 0.849 0.047 1.354 0.14 c 0.506 0.094 0.915 0.208 1.229 0.343 v 2.347 c -0.352 -0.24 -0.768 -0.432 -1.246 -0.579 c -0.479 -0.146 -0.955 -0.219 -1.427 -0.219 c -0.517 0 -0.924 0.116 -1.224 0.348 s -0.449 0.528 -0.449 0.887 c 0 0.404 0.118 0.721 0.354 0.949 c 0.236 0.228 0.792 0.519 1.668 0.87 c 1.078 0.434 1.838 0.917 2.279 1.449 C 64.266 14.287 64.486 14.938 64.486 15.709 Z" fill="#ffffff"></path>
+                                <path d="M 77.858 13.138 c 0 1.864 -0.539 3.354 -1.617 4.47 s -2.542 1.674 -4.391 1.674 c -1.774 0 -3.188 -0.53 -4.239 -1.59 s -1.578 -2.495 -1.578 -4.307 c 0 -1.909 0.539 -3.414 1.617 -4.515 s 2.571 -1.651 4.48 -1.651 c 1.797 0 3.201 0.526 4.212 1.578 C 77.354 9.849 77.858 11.296 77.858 13.138 Z M 75.163 13.228 c 0 -1.272 -0.282 -2.239 -0.848 -2.897 s -1.342 -0.988 -2.33 -0.988 c -1.019 0 -1.815 0.344 -2.393 1.033 c -0.576 0.689 -0.864 1.662 -0.864 2.92 c 0 1.221 0.288 2.169 0.864 2.847 c 0.577 0.678 1.382 1.017 2.415 1.017 c 1.04 0 1.826 -0.333 2.358 -1 C 74.897 15.492 75.163 14.516 75.163 13.228 Z" fill="#ffffff"></path>
+                                <path d="M 85.838 4.097 c -0.419 -0.187 -0.831 -0.281 -1.235 -0.281 c -0.568 0 -1.011 0.182 -1.325 0.545 c -0.314 0.363 -0.472 0.896 -0.472 1.6 V 7.5 h 2.572 v 2.089 h -2.572 V 19 h -2.628 V 9.589 h -1.932 V 7.5 h 1.932 V 5.815 c 0 -0.801 0.175 -1.514 0.522 -2.14 c 0.349 -0.625 0.839 -1.11 1.472 -1.454 c 0.632 -0.344 1.349 -0.517 2.15 -0.517 c 0.636 0 1.142 0.067 1.516 0.202 V 4.097 Z" fill="#ffffff"></path>
+                                <path d="M 92.395 18.888 c -0.157 0.09 -0.437 0.178 -0.837 0.264 s -0.788 0.13 -1.162 0.13 c -2.254 0 -3.381 -1.213 -3.381 -3.639 V 9.589 h -1.909 V 7.5 h 1.909 V 4.85 l 2.605 -0.797 V 7.5 h 2.774 v 2.089 H 89.62 v 5.57 c 0 0.727 0.131 1.241 0.394 1.544 c 0.262 0.304 0.674 0.455 1.235 0.455 c 0.149 0 0.339 -0.032 0.567 -0.096 c 0.228 -0.063 0.421 -0.147 0.578 -0.252 V 18.888 Z" fill="#ffffff"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <div id="FooterCopyright">© 2017 Microsoft</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="javascripts/jquery-2.1.4.min.js"></script>
+    <script src="javascripts/materialize.min.js"></script>
+    <script src="javascripts/packery.pkgd.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/interactions.js"></script>
+    <script src="Javascripts/search.js"></script>
+    <div class="hiddendiv common"></div>
 </body>
 </html>
