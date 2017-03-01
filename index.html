@@ -41,7 +41,7 @@
                     <li class="carditem item" id="{{ post.id | slugify }}">
                         <div class="card">
                             <div class="card-image {{ post.color }}">
-                                <a href="{{ post.url }}">
+                                <a href="{{ post.href }}">
                                     <span class="card-title inline">
                                         <span class="card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
                                         {{ post.title }}
@@ -49,7 +49,7 @@
                                 </a>
                             </div>
                             <div class="card-content">
-                                {{ post.excerpt | strip_html }}<p><a href="{{ post.url }}">Read the full article</a></p>
+                                {{ post.excerpt | strip_html }}<p><a href="{{ post.href }}">Read the full article</a></p>
                             </div>
                         </div>
                     </li>
